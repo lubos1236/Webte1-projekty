@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="code.js"></script>
+</head>
+<body>
+
+<div id="modal" class="modal">
+  <div class="modal_box" id="modal_box">
+    <!--
+    <h1>Vaša objednávka</h1>
+    <span onclick="clearModal()">&times;</span>
+    <p>Meno:</p>
+    <p>Priezvisko:</p>
+    <p>Dátum Narodenia:</p>
+    <p>Vek:</p>
+    <p>Pohlavie:</p>
+    <p>Mesto:</p>
+    <p>Športové centrum:</p>
+    <p>Šport:</p>
+    <p>Datum rezervacie:</p>
+    <p>--mail:</p>
+    <p>--tel:</p>
+    <p>cena:</p>
+    <div class="buttonDiv">
+      <button id="send">Odoslať</button>
+    </div>
+    -->
+  </div>
+
+</div>
+
+
+
+<div class="formBox">
+  <form class="inputForm" id="form"  action="https://form2mail.hynix.sk/form2mail.php" method="post" enctype="multipart/form-data" novalidate onsubmit="event.preventDefault(); generateModal()">
+    <h1>Rezervačný systém</h1>
+    <div>
+      <input type="hidden" name="apikey" value="187fc9cb2c9d9d7026b1ee0435bee147">
+      <input type="hidden" name="from" value="xvalachovicl@stuba.sk">
+      <input type="hidden" name="to" value="feistu02@gmail.com">
+      <input type="hidden" name="subject" value="Ľubomír Valachovič">
+      <input type="hidden" name="redirectOk" value="https://webte1.fei.stuba.sk/~xvalachovicl/X586X_my_random_projects/webte/Zadanie2/index.html">
+      <input type="hidden" name="redirectFalse" value="https://webte1.fei.stuba.sk/~xvalachovicl/X586X_my_random_projects/webte/Zadanie2/ERR.html">
+    </div>
+    <h2>Základné informácie</h2>
+    <div class="user_info">
+
+      <div class="input_box">
+        <input type="text" name="Meno" id="firstName" required="" maxlength="15" onblur="validateName('firstName' ,'infoName')" oninput="letterCounter('firstName')">
+        <label class="letterCounter"></label>
+        <label>*Meno</label>
+        <label class="inputInfo" id="infoName"></label>
+      </div>
+
+      <div class="input_box">
+        <input type="text" name="Priezvisko" id="surname" required="" maxlength="15" onblur="validateName('surname' ,'infoSurname')" oninput="letterCounter('surname')">
+        <label class="letterCounter"></label>
+        <label>*Priezvisko</label>
+        <label class="inputInfo" id="infoSurname"></label>
+      </div>
+
+      <div class="input_box">
+        <input type="date" name="Dátum narodenia" id="date" required="" onblur="validateDate()">
+        <label style="top: -18px">*Dátum narodenia</label>
+        <label class="inputInfo" id="infoDate"></label>
+      </div>
+
+      <div class="input_box">
+        <input type="number" name="Vek" id="age" required="" onblur="validateAge()">
+        <label>*Vek</label>
+        <label class="inputInfo" id="infoAge"></label>
+      </div>
+
+      <div class="genderBox">
+        <div class="radioForm">
+          <div><input checked type="radio" name="Pohlavie" id="radioChoice1" value="muž" onclick="genderOption(1)"><label for="radioChoice1" >Muž</label></div>
+          <div><input type="radio" name="Pohlavie" id="radioChoice2" value="žena" onclick="genderOption(2)"><label for="radioChoice2">Žena</label></div>
+          <div><input type="radio" name="Pohlavie" id="radioChoice3" value="iné" onclick="genderOption(3)"><label for="radioChoice3">Iné</label></div>
+        </div>
+        <div>
+          <textarea name="Pohlavie" id="textArea" cols="53" rows="5" onblur="validateGender()"></textarea>
+          <label class="inputInfo" id="infoArea"></label>
+        </div>
+      </div>
+
+
+    </div>
+    <h2>Výber Haly</h2>
+    <div class="selector">
+      <select name="Mesto" class="multiSelect" id="Select1" onchange="fillOptions('Select1','Select2','Športová hala')">
+        <optgroup label="Mesto">
+          <option value="---" selected>---</option>
+          <option value="Bratislava">Bratislava</option>
+          <option value="Šamorín">Šamorín</option>
+          <option value="Nitra">Nitra</option>
+        </optgroup>
+      </select>
+
+      <select name="Športová hala" class="multiSelect" id="Select2" onchange="fillOptions('Select2','Select3','Šport')" >
+        <optgroup label="Športová hala">
+          <option value="---">---</option>
+        </optgroup>
+      </select>
+
+      <select name="Šport" class="multiSelect" id="Select3">
+        <optgroup label="Šport">
+          <option value="---">---</option>
+        </optgroup>
+      </select>
+
+    </div>
+    <h2>Kontaktné údaje</h2>
+    <div class="user_info">
+      <div class="input_box">
+        <input type="text" name="Email" id="email" required  onblur="validateMail()">
+        <label>E-mail</label>
+        <label class="inputInfo" id="infoMail"></label>
+      </div>
+      <div class="input_box">
+        <input type="text" name="TelNum" id="telNum" required="" maxlength="17" onblur="validateTel()" oninput="letterCounter('telNum')">
+        <label class="letterCounter"></label>
+        <label>Telefónne číslo</label>
+        <label class="inputInfo" id="infoTel"></label>
+      </div>
+    </div>
+
+    <div class="authorBox">
+      <div class="input_box check">
+        <input type="checkbox" id="checkBox" onchange="showAuthorName()">
+        <label for="checkBox">Show Author Info</label>
+      </div>
+
+      <div class="input_box">
+        <div class="author_info">
+          <input type="hidden" id="hidden1" value="Ľubomír">
+        </div>
+
+        <div class="author_info">
+          <input type="hidden" id="hidden2" value="Valachovič">
+        </div>
+      </div>
+    </div>
+
+    <h2>Dátum a čas rezervácie (1 hodina)</h2>
+    <div class="user_info">
+      <div class="input_box">
+        <input type="datetime-local" name="Dátum a čas rezervácie" id="reservDate" required="" onblur="validateReservationDate()">
+        <label style="top: -18px">*Dátum reserácie</label>
+        <label class="inputInfo" id="infoReserv"></label>
+      </div>
+    </div>
+    <input type="hidden" name="Cena" id="price">
+  <button type="submit">Submit</button>
+  </form>
+
+</div>
+</body>
+</html>

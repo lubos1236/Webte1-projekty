@@ -1,0 +1,296 @@
+@font-face {
+    font-family: GemunuLibre;
+    src: url("Font/GemunuLibre-VariableFont_wght.ttf");
+}
+*{
+    font-family: GemunuLibre, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom ,#CCCCCC, #FFEDE6);
+}
+.title1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 5em;
+}
+.title2{
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 3em;
+}
+nav{
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    background-color: #726c6c;
+    font-size: x-large;
+    color: white;
+    z-index: 1;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li{
+    list-style: none;
+    float: left;
+    border-right: 1px solid white;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+}
+nav li a.active:not(:hover){
+    font-weight: bold;
+    color: black;
+}
+nav a:hover {
+    background-color: #555;
+    color: red;
+}
+/*----------------------------------O MNE-------------------------------------- */
+.about{
+    margin: 150px auto 0 auto;
+    width: 40%;
+    padding: 8px;
+    min-width: 300px;
+}
+.about img{
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 0 20px 0 0;
+}
+.about .text{
+    text-align: justify;
+    font-size: larger;
+}
+.about aside{
+    font-size: 1.5em;
+    min-width: 200px;
+    width: 30%;
+    float: right;
+    margin: 0 0 0 30px;
+    padding: 0 0 0 10px;
+    background-color: #726c6c;
+    text-align: center;
+}
+.about li{
+    list-style-position: inside;
+}
+/*----------------------------------ZIVOTOPIS----------------------------------- */
+
+.cv{
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    max-width: 1000px;
+    margin: 100px auto 0 auto;
+    padding-bottom: 0;
+    font-size: larger;
+}
+.cv .left{
+    width: 300px;
+    background-color: #4b4747;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.cv .left img{
+    padding: 30px 0 0 0;
+    width: 250px;
+    height: 300px;
+}
+.cv .left .contacts{
+    padding-top: 50px;
+}
+.cv .left li{
+    list-style: none;
+    text-align: left;
+    margin-left: -25px;
+}
+.cv .right{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 700px;
+}
+.cv .right .name{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 5em;
+}
+.cv section{
+    padding-left: 10px;
+    text-align: left;
+}
+
+
+/*----------------------------------ROZVRH-------------------------------------- */
+.schedule{
+    overflow-x: hidden;
+}
+.schedule section{
+    overflow-x: auto;
+}
+.schedule table{
+    margin: 0 auto;
+    color: #CCCCCC;
+}
+.schedule table td{
+    height: 75px;
+    width: 150px;
+    border: 2px solid black;
+    text-align: center;
+}
+.schedule .hide{
+    display: none;
+}
+.schedule td.cvicenie{
+    background-color: #eac39b;
+    color: black;
+}
+.schedule td.tk{
+    background-color: #f3c0c7;
+    color: black;
+}
+.schedule td.prednaska{
+    background-color: antiquewhite;
+    color: black;
+}
+.schedule tr:first-child{
+    background-color: #404040;
+}
+.schedule tr:nth-child(odd):not(:first-child){
+    background-color: #666666;
+}
+.schedule tr:nth-child(even){
+    background-color: #8C8C8C;
+}
+.schedule  td:first-child:not(.tk){
+    background-color: #404040;
+}
+
+/*----------------------------------KNIHY-------------------------------------- */
+.books{
+    overflow: hidden;
+}
+.books .hotspotCanvas{
+    max-width: 1200px;
+    max-height: 780px;
+    margin: 50px auto 0 auto;
+    position: relative;
+}
+.books img{
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+.books .item{
+    position: absolute;
+}
+.books .icon{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 3px solid #FFF;
+    background-color: #726c6c;
+    cursor: pointer;
+    position: absolute;
+}
+.books .item.book1{
+    top: 20%;
+    left: 21%;
+}
+.books .item.book2{
+    top: 20%;
+    right: 28%;
+}
+.books .item.book3{
+    top: 50%;
+    right: 50%;
+}
+.books .item.book4{
+    bottom: 25%;
+    left: 25%;
+}
+.books .item.book5{
+    bottom: 20%;
+    right: 30%;
+}
+.books .toolTip{
+    position: absolute;
+    padding: 15px;
+    width: 13em;
+    bottom: calc(50% - 10em);
+    left: 40px;
+    background-color: white;
+    color: black;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+.books .item:hover .toolTip{
+    opacity: 0.8;
+}
+.books .price{
+    font-weight:bold;
+    font-size: x-large;
+    color: red;
+}
+
+/*----------------------------------RESPONSIVE----------------------------------- */
+
+
+@media (max-width: 600px) {
+    nav{
+        font-size: medium;
+        position: static;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    nav li a{
+        padding: 8px;
+    }
+    .about{
+        overflow: hidden;
+    }
+    .about aside{
+        font-size: 1.5em;
+        width: 100%;
+        float: inside;
+        text-align: center;
+    }
+
+    .cv{
+        flex-direction: column;
+        justify-content: center;
+        max-width: 300px;
+
+    }
+    .cv .right{
+        max-width: 300px;
+    }
+    .cv .right .name{
+        font-size:4em;
+    }
+
+    .books .hotspotCanvas{
+        overflow-x: hidden;
+    }
+    .books img{
+        overflow-x: auto;
+    }
+}
