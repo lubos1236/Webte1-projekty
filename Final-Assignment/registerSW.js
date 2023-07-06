@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/~xvalachovicl/X586X_my_random_projects/webte/Final-Assignment/sw.js', { scope: '/~xvalachovicl/X586X_my_random_projects/webte/Final-Assignment/' })})}

@@ -1,0 +1,56 @@
+{
+    "tileWidth": 60,
+    "tileHeight": 60,
+    "tiles": [
+        {
+            "name": "start",
+            "index": [0, 0],
+            "boundaries": [false, false, true, false]
+        },
+        {
+            "name": "finish",
+            "index": [1, 0],
+            "boundaries": [false, false, true, false]
+        },
+        {
+            "name": "straightFixed",
+            "index": [2, 0],
+            "boundaries": [true, false, true, false]
+        },
+        {
+            "name": "cornerFixed",
+            "index": [3, 0],
+            "boundaries": [false, true, true, false]
+        },
+        {
+            "name": "boulder",
+            "index": [4, 0],
+            "boundaries": [false, false, false, false]
+        },
+        {
+            "name": "none",
+            "index": [0, 1],
+            "boundaries": [false, false, false, false]
+        },
+        {
+            "name": "corner",
+            "index": [1, 1],
+            "boundaries": [false, true, true, false]
+        },
+        {
+            "name": "straight",
+            "index": [2, 1],
+            "boundaries": [true, false, true, false]
+        },
+        {
+            "name": "ball",
+            "index": [3, 1],
+            "boundaries": null
+        },
+        {
+            "name": "tree",
+            "index": [4, 1],
+            "boundaries": [false, false, false, false]
+        }
+    ]
+}

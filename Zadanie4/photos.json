@@ -1,0 +1,138 @@
+{
+  "photos": [
+    {
+      "fileName": "img1.jpg",
+      "name": "Lomnický štít",
+      "description": "Observatórium na Lomnickom Štíte - zdola",
+      "dateTime": "2022-08-08",
+      "GPS": [49.195467127387076, 20.21306066660582],
+      "fileAddress": "photos/img1.jpg"
+    },
+    {
+      "fileName": "img2.jpg",
+      "name": "Lomnický štít",
+      "description": "Observatórium na Lomnickom Štíte - vrchol",
+      "dateTime": "2022-08-08",
+      "GPS": [49.195467127387076, 20.21306066660582],
+      "fileAddress": "photos/img2.jpg"
+    },
+    {
+      "fileName": "img3.jpg",
+      "name": "Lomnický štít",
+      "description": "Observatórium na Lomnickom Štíte - zdola",
+      "dateTime": "2022-08-08",
+      "GPS": [49.195467127387076, 20.21306066660582],
+      "fileAddress": "photos/img3.jpg"
+    },
+    {
+      "fileName": "img4.jpg",
+      "name": "Lomnický štít",
+      "description": "Pohlad zdola na Lomnický štít",
+      "dateTime": "2022-08-08",
+      "GPS": [49.195467127387076, 20.21306066660582],
+      "fileAddress": "photos/img4.jpg"
+    },
+
+
+    {
+      "fileName": "img5.jpg",
+      "name": "Gerlachovský štít",
+      "description": "Gerlachovský štít - Západná stena",
+      "dateTime": "2022-07-15",
+      "GPS": [49.16457220973088, 20.133598186196515],
+      "fileAddress": "photos/img5.jpg"
+    },
+    {
+      "fileName": "img6.jpg",
+      "name": "Gerlachovský štít - vrchol",
+      "description": "Križ na vrchu Gerlachovského štítu",
+      "dateTime": "2022-07-15",
+      "GPS": [49.16457220973088, 20.133598186196515],
+      "fileAddress": "photos/img6.jpg"
+    },
+    {
+      "fileName": "img7.jpg",
+      "name": "Gerlachovský štít - zdola",
+      "description": "Pohlad zdola na vrchol Gerlachovského štítu",
+      "dateTime": "2022-07-15",
+      "GPS": [49.16457220973088, 20.133598186196515],
+      "fileAddress": "photos/img7.jpg"
+    },
+
+    {
+      "fileName": "img8.jpg",
+      "name": "Zobor-Nitra - zdola",
+      "description": "Pohlad zdola na vrchol Zobor",
+      "dateTime": "2021-08-18",
+      "GPS": [48.346366029215865, 18.108563973645506],
+      "fileAddress": "photos/img8.jpg"
+    },
+    {
+      "fileName": "img9.jpg",
+      "name": "Zobor-Nitra - vrchol",
+      "description": "Vysielač Zobor - Nitra",
+      "dateTime": "2021-08-18",
+      "GPS": [48.346366029215865, 18.108563973645506],
+      "fileAddress": "photos/img9.jpg"
+    },
+    {
+      "fileName": "img10.jpg",
+      "name": "Zobor-Nitra ",
+      "description": "Západná stena vrchu Zobor",
+      "dateTime": "2021-08-18",
+      "GPS": [48.346366029215865, 18.108563973645506],
+      "fileAddress": "photos/img10.jpg"
+    },
+
+    {
+      "fileName": "img11.jpg",
+      "name": "Chata pod Rysmi",
+      "description": "Chata pod Rysmi - vystup",
+      "dateTime": "2022-06-28",
+      "GPS": [49.17455352147286, 20.08707566940496],
+      "fileAddress": "photos/img11.jpg"
+    },
+    {
+      "fileName": "img12.jpg",
+      "name": "Chata pod Rysmi",
+      "description": "Chata pod Rysmi - bufet",
+      "dateTime": "2022-06-28",
+      "GPS": [49.17455352147286, 20.08707566940496],
+      "fileAddress": "photos/img12.jpg"
+    },
+    {
+      "fileName": "img13.jpg",
+      "name": "Chata pod Rysmi - vrchol",
+      "description": "Pohlad z vrcholu Chaty pod Rysmi",
+      "dateTime": "2022-06-28",
+      "GPS": [49.17455352147286, 20.08707566940496],
+      "fileAddress": "photos/img13.jpg"
+    },
+    {
+      "fileName": "img14.jpg",
+      "name": "Chata pod Rysmi - zastávka",
+      "description": "Zastávka na Chate pod Rysmi",
+      "dateTime": "2022-06-28",
+      "GPS": [49.17455352147286, 20.08707566940496],
+      "fileAddress": "photos/img14.jpg"
+    },
+    {
+      "fileName": "img15.jpg",
+      "name": "Chata pod Rysmi - chata",
+      "description": "Pohlad na Chatu pod Rysmi",
+      "dateTime": "2022-06-28",
+      "GPS": [49.17455352147286, 20.08707566940496],
+      "fileAddress": "photos/img15.jpg"
+    },
+
+    {
+      "fileName": "img16.jpg",
+      "name": "Veľký Rozsutec - vrchol",
+      "description": "Križ na vrchu Veľký Rozsutec",
+      "dateTime": "2022-01-03",
+      "GPS": [49.23230782540025, 19.0985681586791],
+      "fileAddress": "photos/img16.jpg"
+    }
+
+  ]
+}
